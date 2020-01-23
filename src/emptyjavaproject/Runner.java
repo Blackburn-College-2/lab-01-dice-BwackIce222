@@ -7,15 +7,21 @@ package emptyjavaproject;
 
 /**
  *
- * @author paul.kline
+ * @author paul.kline/ montreal.thomas
  */
-public class Main {
+import java.util.Scanner;
+
+public class Runner {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Scanner input = new Scanner(System.in);
+        System.out.println("How often should i print?");
+        int nTimes = input.nextInt();
+        
+
     }
-    
+
 }
