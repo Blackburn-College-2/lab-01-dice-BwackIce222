@@ -7,15 +7,16 @@
 /**
  *
  * @author montreal.thomas
+ *The Die class contains a method that simulates a random die roll of 'n' 
+ * sides.
  */
 public class Dice {
-private int side;    
-    
+ private int sides;
 
-public int Roll(){
- int roll= (int)(6*Math.random()+1);
- return roll;         
-}    
+    public int roll(int sides) {
+        int roll = (int) (sides * Math.random() + 1);
+        return roll;
+    }  
     
     
 }

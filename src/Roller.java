@@ -5,17 +5,23 @@
  */
 
 /**
- *
+ *Roller class contains the logic required to print out the rolled
+ * probabilities to the screen.
+ * 
  * @author montreal.thomas
  */
 public class Roller {
-private int[] rolls;
-    
-public int[] Rolls(int nTimes){
-    
-for(int i=0; i>0; i--){
-    int result = 
-}    
-       
-}
+public void rollerProbabilities(double[] stats, double tests, double sides,
+            int numOfDie) {
+        System.out.println("After " + (int) tests + " rolls the distribution as"
+                + " " + "a percentage is:");
+        for (int i = 0; i < sides * numOfDie; i++) {
+            double probability = stats[i] / tests * 100;
+            System.out.printf((i + 1) + " was rolled " + (int) stats[i] + " "
+                    + "times %.2f", probability);
+            System.out.print("%");
+            System.out.println("");
+
+        }
+    }
 }
